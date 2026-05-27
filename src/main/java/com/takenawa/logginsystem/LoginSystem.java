@@ -20,6 +20,6 @@ public class LoginSystem {
         }));
 
         DatabaseManager.initializeDatabase();
-        SwingUtilities.invokeLater(() -> LoginFrame.getInstance().setVisible(true));
+        SwingUtilities.invokeLater(LoginFrame::new);
     }
 }
